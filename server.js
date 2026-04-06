@@ -255,13 +255,5 @@ app.get('/api/inventory', (req, res) => {
   });
   res.json(Object.values(inventory));
 });
-app.get('/', (req, res) => {
-  res.send('API is running 🚀');
-});
-app.get('/', (req, res) => {
-  res.send('API is running');
-});
-app.get('/latest', (req, res) => {
-  res.json({ message: "Latest endpoint working" });
-});
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
